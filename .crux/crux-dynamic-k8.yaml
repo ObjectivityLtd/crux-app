@@ -26,7 +26,7 @@ parameters:
 
   - name: jmeter_args
     displayName: JMeter arguments passed to tests
-    default: "-Jthreads=3 -Jloops=1 -JrampUp=1 -Jwait_ms=1000 -Jdata_dir=/shared"
+    default: "-Gthreads=3 -Gloops=1 -GrampUp=1 -Gwait_ms=1000 -Gdata_dir=/shared"
     values: #use -J for non-AKS and -G for AKS
       - "-Jthreads=3 -Jloops=1 -JrampUp=1 -Jwait_ms=1000 -Jdata_dir=/shared"
       - "-Gthreads=3 -Gloops=1 -GrampUp=1 -Gwait_ms=1000 -Gdata_dir=/shared"
